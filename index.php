@@ -22,7 +22,7 @@
                 $("#uf").val("");
                 $("#ibge").val("");
             }
-            
+
             //Quando o campo cep perde o foco.
             $("#cep").blur(function() {
 
@@ -107,16 +107,16 @@
         <input name="cidade" type="text" id="cidade" size="40" /></label><br />
         <label>Estado:
         <input name="uf" type="text" id="uf" size="2" /></label><br />
-        
+
         <label for="">Email:
         <input type="email" name="email" id=""></label><br />
         <label for="" name="refe" >Ponto de referência de onde mora:
-         <input type="text" name="Refe"></label> <br />
+         <input type="text" name="refe"></label> <br />
          <button type="button" class="btn btn-outline-primary">Adcionar</button>
     <button type="exit" class="btn btn-outline-primary">Limpar</button>
 
       </form>
-</div>  
+</div>
 
 
 

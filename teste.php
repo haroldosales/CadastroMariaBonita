@@ -5,16 +5,16 @@ try {
     $con_string ="host=localhost port=5432 dbname=postgres user=postgres password=toor";
     $bdcon4 = pg_connect($con_string);
 
-    $Nome = $_POST['nome'];
-    $Telefone = $_POST['telefone'];
-    $Nascimento = $_POST['nascimento'];
+    $nome = $_POST['nome'];
+    $telefone = $_POST['telefone'];
+    $nascimento = $_POST['nascimento'];
     $CEP = $_POST['cep'];
     $rua = $_POST['rua'];
-    $bairro = $_POST['Bairro'];
-    $cidade = $_POST['Cidade'];
+    $bairro = $_POST['bairro'];
+    $cidade = $_POST['cidade'];
     $uf = $_POST['uf'];
     $email = $_POST['email'];
-    $refe = $_POST['refe'];
+    $re = $_POST['refe'];
 
 
 
@@ -22,20 +22,20 @@ try {
 
 
 
-  		
-     $result = pg_query($bdcon4, "INSERT INTO infor  VALUES ('$nome', '$Telefone','$Nascimento', '$CEP','$rua','$bairro','$cidade','$uf', '$email','$refe');");
- 
+
+     $result = pg_query($bdcon4,"INSERT INTO infor  VALUES ('$nome','$telefone','$nascimento', '$CEP','$rua','$bairro','$cidade','$email', '$uf','$re');");
+
 
 
 
   		echo "client cadastro sucesso ";
-  	
 
-  		
+
+
 
 } catch (Exception $e) {
     echo $e;
-    
+
 }
 
 
